@@ -1,3 +1,6 @@
+# workspace specific files and folders
+testing
+
 *.bundle.*
 lib/
 node_modules/

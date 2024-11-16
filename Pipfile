@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+numpy = "*"
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+ipykernel = "*"
+torchviz = "*"
+tqdm = "*"
+scikit-learn = "*"
+matplotlib = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
