@@ -1,0 +1,21 @@
+1.
+A Variational Autoencoder reduces the data to the latent space and tries to reconstruct the original image, whereby it learns the compressed representation from the latent space. The Diffusion Model also learns to reconstruct the original image, by trying to undo the noise. One Similarity is that both models can be used as generators. 
+
+
+TODO
+
+
+2.
+Dequantization adds a „noise“ to discrete Values.Often Models have continues Values and therefor it could be a problem if the compared Values are only discrete. If you habe one value to generate and it is always very close like 3,006; 2,998 and the perfect value would be 3 then the model cannot improve to perfectnes. But when you add a noise to the 3 it is possible by chance to hit a perfect match.
+
+3.
+Flow: Explain the significance of the Coupling Network in Coupling Flow 
+TODO
+4.
+it is important to have intermediate steps, because the model learns to reconstuct the image interativly. In the learning process the image gets nosier with the time, but the model learns to reconstrct the image in each step. When the model is alreads trained, the model reconstruct big structures at the begining and gets more detailed later. It is nearly imposible to get a perfect reconstructed image from noisy in only one step. 
+5.
+
+The idea of self-supervised learning is to create a basic understanding with a few labeled data so that you can then continue working with unlabeled data in a harder enviroment. In a first, simpler task, an attempt is made to learn semantic structures with the help of labeled data. A second, more difficult task is then attempted using the pre-trained model. For example, it can learn the structural differences between animals and cars and then perform a classification with(-out) labels.
+ 
+6.
+Contrastive Learning can easyly be applied  for binary classification, where you have a positiv or negativ sample. Like classifying if an image shows a dog. The samples can only be positiv or negativ. The idea behind the triplet loss is on the one Hand to minimize the distance to positiv samples, and on the other hand to maximize to negativ samples.
